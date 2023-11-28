@@ -28,7 +28,7 @@ function playMove(buttonNum)
         {
             cellElement.classList.add(`computer-O`);
         }
-        const audio = new Audio('../other/buttonClick.wav');
+        const audio = new Audio('../../other/buttonClick.wav');
         audio.play();
         const result1 = checkWinner();
         const result2 = checkTie();
@@ -75,20 +75,20 @@ function checkWinner()
             if(cell[winningCells[0]] === 'X')
             {
                 winnerTextElement.innerHTML = 'Player X win !';
-                const audio = new Audio('../other/winSound.wav');
+                const audio = new Audio('../../other/winSound.wav');
                 audio.play();
             }
             else if(cell[winningCells[0]] === 'O')
             {
                 winnerTextElement.innerHTML = 'Computer O win !';
-                const audio = new Audio('../other/winSound.wav');
+                const audio = new Audio('../../other/winSound.wav');
                 audio.play();
             }
         }
         else
         {
             winnerTextElement.innerHTML = `Player ${cell[winningCells[0]]} win !`;
-            const audio = new Audio('../other/winSound.wav');
+            const audio = new Audio('../../other/winSound.wav');
             audio.play();
         }
 

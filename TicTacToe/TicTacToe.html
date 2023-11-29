@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="icon" type="image/x-icon" href="/images/TicTacToe-Icon.png">
+    <link rel="stylesheet" href="styles/TicTacToe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="game">
+      <div class="winner"></div>
+      <div class="game-board">
+        <div class="row1">
+          <button class="button0"></button>
+          <button class="button1"></button>
+          <button class="button2"></button>
+        </div>
+        <div class="row2">
+          <button class="button3"></button>
+          <button class="button4"></button>
+          <button class="button5"></button>
+        </div>
+        <div class="row3">
+          <button class="button6"></button>
+          <button class="button7"></button>
+          <button class="button8"></button>
+        </div>
+      </div>
+      <div class="stats"> 
+        <div class="stats-column">
+          <div class="stats-name1">PLAYER X</div>
+          <div class="stats-counter1">0</div>
+        </div>
+        <div class="stats-column">
+          <div class="stats-name2">TIE</div>
+          <div class="stats-counter2">0</div>
+        </div>
+        <div class="stats-column">
+          <div class="stats-name3">COMPUTER O</div>
+          <div class="stats-counter3">0</div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="reset-button">Reset Game</button>
+        <div class="game-players">
+          <button class="players-button">&#8473;<span class="players-button-span">VS</span>&#8450;</button>
+          <select name="computer-skills" id="computer-skills-drop-down">
+            <option value="novice">Novice</option>
+            <option value="expert" selected="selected">Expert</option>
+            <option value="devine">Devine</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <p class="creator">~ Created By Liel Ferber</p>
+    <script type="module" src="scripts/TicTacToe.js"></script>
+  </body>
+</html>
